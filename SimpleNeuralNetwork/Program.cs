@@ -96,10 +96,10 @@ trainingDatas.Add(new TrainingModel()
 trainingDatas.Add(new TrainingModel()
 {
     Inputs = new List<double[]> { network.DivideDoubleArray(new double[] { 6, 9, 9, 9, 9, 9, 6 }, 31) },
-    LabeledOutputs = network.DivideDoubleArray(new double[] { 1 }, 10)
+    LabeledOutputs = network.DivideDoubleArray(new double[] { 0 }, 10)
 });
 
-network.Train(trainingDatas, 100000);
+network.Train(trainingDatas, 10000);
 
 // and now to test how good the neural network was trained :)
 Console.WriteLine("Testing...");
